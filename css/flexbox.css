@@ -23,7 +23,9 @@ body{
     align-items: center;
     padding-right: 5%;
     padding-left: 5%;
-    
+    position: fixed; 
+    top: 0; /* Position the navbar at the top of the page */
+    width: 90%; /* Full width */
 }
 
 .left_ul{
@@ -85,11 +87,10 @@ body{
 
 
 #title_image{
-
     width: 16%;
     border-radius: 50%;
     margin-left: 42%;
-    margin-top: 180px;
+    margin-top: 100px;
     margin-bottom: 80px;
     box-shadow: 0px 0px 18px 18px  gray;
 }
@@ -146,6 +147,7 @@ body{
     height: 300px;
     margin-top:20px;
     box-shadow: 0px 0px 3px 3px  grey;
+    z-index: 1;
 
 }
 .second_items p{
@@ -153,9 +155,7 @@ body{
     margin-right:10%;
     background-color: white;
     padding:15px;
-    box-shadow: 0px 0px 8px 15px  gray;
-    position: absolute;
-    z-index: -1;
+    box-shadow: 0px 0px 8px 15px  gray;    
 }
 
 .row{
@@ -186,13 +186,22 @@ body{
    height: 300px;
 }
 
+#sticky{
+    width: 100px;
+    border-radius: 50%;
+    position: fixed; 
+    top: 500px;
+    right: 50px;   
+}
+
+
 footer{
     background-color: black;
     color: white;
     margin-top: 20px;
     padding: 20px;
     text-align: center;
-
+    
 }
 
 .socials{
@@ -236,6 +245,8 @@ footer{
     body {
       background-color: gray;
     }
+
+
     .row div{
         float: left;
         width: 40%;
@@ -247,7 +258,7 @@ footer{
         width: 32%;
         border-radius: 50%;
         margin-left: 34%;
-        margin-top: 180px;
+        margin-top: 100px;
         margin-bottom: 80px;
         box-shadow: 0px 0px 18px 18px  gray;
     }
@@ -261,11 +272,27 @@ footer{
     body {
       background-color: gray;
     }
+    .container{
+        height: 100px;
+        display: flex;
+        flex: wrap;
+        justify-content: center;
+    }
+
+
     .row div{
         float: left;
         width: 80%;
         margin-right: 5%;
         
+    }
+
+    .first_items img{
+        height: 150px; 
+    }
+
+    .second_items img{
+        height: 150px; 
     }
 
 
